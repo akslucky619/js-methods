@@ -7,7 +7,7 @@
         "summary": "Executes a provided function once for each element."
     },
     {
-        "method": "(link: http://Array.prototype.map) Array.prototype.map()",
+        "method": "Array.prototype.map()",
         "syntax": "var array1 = [1, 4, 9, 16] <br>const map1 = (link: http://array1.map) array1.map(x => x * 2) <br>console.log(map1);",
         "parameter": "Callback(currentValue, index, array), thisArg",
         "return": "A new Array with same length as calling function.",
