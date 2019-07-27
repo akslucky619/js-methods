@@ -1,35 +1,45 @@
 [
     {
         "method": "Array.prototype.forEach()",
-        "syntax": "var array1 = ['a', 'b', 'c']; <br> array1.forEach(function(element)  <br>    console.log(element); <br> });",
+        "syntax": "var array1 = ['a', 'b', 'c']",  
+        "synatx1": "array1.forEach(function(element)",
+        "syntax2": "console.log(element); <br> });",
         "parameter": "Callback(currentValue, index, array), thisArg",
         "return": "Undefined",
         "summary": "Executes a provided function once for each element."
     },
     {
         "method": "Array.prototype.map()",
-        "syntax": "var array1 = [1, 4, 9, 16] <br>const map1 = (link: http://array1.map) array1.map(x => x * 2) <br>console.log(map1);",
+        "syntax": "var array1 = [1, 4, 9, 16]",
+        "syntax1": "const map1 = array1.map(x => x * 2)",
+        "syntax2": "<br>console.log(map1);",
         "parameter": "Callback(currentValue, index, array), thisArg",
         "return": "A new Array with same length as calling function.",
         "summary": "Creates a new Array with the results of provided function and with same length of calling Array."
     },
     {
         "method": "Array.prototype.filter()",
-        "syntax": "var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'] <br>const result = words.filter(word => word.length > 6) <br>console.log(result);",
+        "syntax": "var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']",
+        "syntax1": "const result = words.filter(word => word.length > 6)",
+        "syntax2" "console.log(result);",
         "parameter": "Callback(currentValue, index, array), thisArg",
         "return": "New Array with filtered elements.",
         "summary": "Creates a new Array with all the elements that pass the test implimented by provided function."
     },
     {
         "method": "Array.prototype.reduce()",
-        "syntax": "const array1 = [1, 2, 3, 4] <br>const reducer = (accumulator, currentValue) => accumulator + currentValue <br>console.log(array1.reduce(reducer));",
+        "syntax": "const array1 = [1, 2, 3, 4]",
+        "syntax1": "const reducer = (accumulator, currentValue) => accumulator + currentValue",
+        "syntax2": "console.log(array1.reduce(reducer));",
         "parameter": "Callback(accumulator, currentValue, index, array), initialValue",
         "return": "A single output, which can be of any type.",
         "summary": "Applies a reducer function on each array element. Results in a single output."
     },
     {
         "method": "Array.prototype.slice()",
-        "syntax": "var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'] <br>console.log(animals.slice(2, 4) <br>//Array ['camel', 'duck']",
+        "syntax": "var animals = ['ant', 'bison', 'camel', 'duck', 'elephant']",
+        "sytax1": "console.log(animals.slice(2, 4)",
+        "syntax2": "//Array ['camel', 'duck']",
         "parameter": "start index, end index",
         "return": "A new Array containing extracted elements.",
         "summary": "Returns a specified part form the array. Similar to what substring() does to a string."
