@@ -12,7 +12,7 @@
         "method": "Array.prototype.map()",
         "syntax": "var array1 = [1, 4, 9, 16]",
         "syntax1": "const map1 = array1.map(x => x * 2)",
-        "syntax2": "<br>console.log(map1);",
+        "syntax2": "console.log(map1);",
         "parameter": "Callback(currentValue, index, array), thisArg",
         "return": "A new Array with same length as calling function.",
         "summary": "Creates a new Array with the results of provided function and with same length of calling Array."
@@ -21,7 +21,7 @@
         "method": "Array.prototype.filter()",
         "syntax": "var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']",
         "syntax1": "const result = words.filter(word => word.length > 6)",
-        "syntax2" "console.log(result);",
+        "syntax2": "console.log(result);",
         "parameter": "Callback(currentValue, index, array), thisArg",
         "return": "New Array with filtered elements.",
         "summary": "Creates a new Array with all the elements that pass the test implimented by provided function."
