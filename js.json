@@ -10,7 +10,7 @@
   },
   {
     "method":"String.prototype.repeat()",
-    "syntax":"var chorus = 'Because I\'m happy. ';",
+    "syntax":"var chorus = 'Because I'm happy. ';",
     "syntax1":"console.log('Chorus lyrics for 'Happy': ' + chorus.repeat(2));",
     "syntax2":"// expected output: 'Chorus lyrics for 'Happy': Because I'm happy. Because I'm happy",
     "parameter":"Count - indicating the number of times to repeat the string in the newly-created string that is to be returned.",
