@@ -7,4 +7,49 @@
     "parameter":"Search value - A string representing the value to search for, from index",
     "return":"The index of the first occurrence of searchValue, or -1 if not found.",
     "summary":"The indexOf() method returns the index within the calling String object of the first occurrence of the specified value, starting the search at fromIndex."
+  },
+  {
+    "method":"String.prototype.repeat()",
+    "syntax":"var chorus = 'Because I\'m happy. ';",
+    "syntax1":"console.log('Chorus lyrics for 'Happy': ' + chorus.repeat(2));",
+    "syntax2":"// expected output: 'Chorus lyrics for 'Happy': Because I'm happy. Because I'm happy",
+    "parameter":"Count - indicating the number of times to repeat the string in the newly-created string that is to be returned.",
+    "return":"A new string containing the specified number of copies of the given string.",
+    "summary":"The repeat() method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together."
+  },
+  {
+    "method":"String.prototype.slice()",
+    "syntax":"var str = 'The quick brown fox jumps over the lazy dog.';",
+    "syntax1":"console.log(str.slice(31));",
+    "syntax2":"// expected output: 'the lazy dog.'",
+    "parameter":"beginIndex, endIndex (optional)",
+    "return":"A new string containing the extracted section of the string.",
+    "summary":"The slice() method extracts a section of a string and returns it as a new string, without modifying the original string."
+  },
+  {
+    "method":"String.prototype.toLowerCase()",
+    "syntax":"var sentence = 'The quick brown fox jumps over the lazy dog.';",
+    "syntax1":"console.log(sentence.toLowerCase());",
+    "syntax2":"// expected output: 'the quick brown fox jumps over the lazy dog.'",
+    "parameter":"Does not takes any parameter.",
+    "return":"A new string representing the calling string converted to lower case.",
+    "summary":"The toLowerCase() method returns the calling string value converted to lower case."
+  },
+  {
+    "method":"String.prototype.toUpperCase()",
+    "syntax":"var sentence = 'The quick brown fox jumps over the lazy dog.';",
+    "syntax1":"console.log(sentence.toUpperCase());",
+    "syntax2":"// expected output: 'THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.'",
+    "parameter":"Does not takes any parameter.",
+    "return":"A new string representing the calling string converted to upper case.",
+    "summary":"The toUpperCase() method returns the calling string value converted to upper case."
+  },
+  {
+    "method":"String.prototype.trim()",
+    "syntax":"var greeting = '   Hello world!   ';",
+    "syntax1":"console.log(greeting.trim());",
+    "syntax2":"// expected output: 'Hello world!';",
+    "parameter":"Does not takes any parameter.",
+    "return":"A new string representing the calling string stripped of whitespace from both ends.",
+    "summary":"The trim() method removes whitespace from both ends of a string."
   }]
