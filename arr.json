@@ -1,1 +1,64 @@
-[{"method":"Array.prototype.forEach()","syntax":"var array1 = ['a', 'b', 'c']","parameter":"Callback(currentValue, index, array), thisArg","return":"Undefined","summary":"Executes a provided function once for each element.","syntax1":"array1.forEach(function(element)","syntax2":"console.log(element); });"},{"method":"Array.prototype.map()","syntax":"var array1 = [1, 4, 9, 16]","parameter":"Callback(currentValue, index, array), thisArg","return":"A new Array with same length as calling function.","summary":"Creates a new Array with the results of provided function and with same length of calling Array.","syntax1":"const map1 = array1.map(x => x * 2)","syntax2":"console.log(map1);"},{"method":"Array.prototype.filter()","syntax":"var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']","parameter":"Callback(currentValue, index, array), thisArg","return":"New Array with filtered elements.","summary":"Creates a new Array with all the elements that pass the test implimented by provided function.","syntax1":"const result = words.filter(word => word.length > 6)","syntax2":"console.log(result);"},{"method":"Array.prototype.reduce()","syntax":"const array1 = [1, 2, 3, 4]","parameter":"Callback(accumulator, currentValue, index, array), initialValue","return":"A single output, which can be of any type.","summary":"Applies a reducer function on each array element. Results in a single output.","syntax1":"const reducer = (accumulator, currentValue) => accumulator + currentValue","syntax2":"console.log(array1.reduce(reducer));"},{"method":"Array.prototype.slice()","syntax":"var animals = ['ant', 'bison', 'camel', 'duck', 'elephant']","parameter":"start index, end index","return":"A new Array containing extracted elements.","summary":"Returns a specified part form the array. Similar to what substring() does to a string.","syntax1":"console.log(animals.slice(2, 4)","syntax2":"//Array ['camel', 'duck']"}]
+[{"method":"Array.prototype.forEach()","syntax":"var array1 = ['a', 'b', 'c']","parameter":"Callback(currentValue, index, array), thisArg","return":"Undefined","summary":"Executes a provided function once for each element.","syntax1":"array1.forEach(function(element)","syntax2":"console.log(element); });"},{"method":"Array.prototype.map()","syntax":"var array1 = [1, 4, 9, 16]","parameter":"Callback(currentValue, index, array), thisArg","return":"A new Array with same length as calling function.","summary":"Creates a new Array with the results of provided function and with same length of calling Array.","syntax1":"const map1 = array1.map(x => x * 2)","syntax2":"console.log(map1);"},{"method":"Array.prototype.filter()","syntax":"var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']","parameter":"Callback(currentValue, index, array), thisArg","return":"New Array with filtered elements.","summary":"Creates a new Array with all the elements that pass the test implimented by provided function.","syntax1":"const result = words.filter(word => word.length > 6)","syntax2":"console.log(result);"},{"method":"Array.prototype.reduce()","syntax":"const array1 = [1, 2, 3, 4]","parameter":"Callback(accumulator, currentValue, index, array), initialValue","return":"A single output, which can be of any type.","summary":"Applies a reducer function on each array element. Results in a single output.","syntax1":"const reducer = (accumulator, currentValue) => accumulator + currentValue","syntax2":"console.log(array1.reduce(reducer));"},{"method":"Array.prototype.slice()","syntax":"var animals = ['ant', 'bison', 'camel', 'duck', 'elephant']","parameter":"start index, end index","return":"A new Array containing extracted elements.","summary":"Returns a specified part form the array. Similar to what substring() does to a string.","syntax1":"console.log(animals.slice(2, 4)","syntax2":"//Array ['camel', 'duck'],
+  {
+    "method":"Array.prototype.map()",
+    "syntax":"var array1 = [1, 4, 9, 16];",
+    "syntax1":"const map1 = array1.map(x => x * 2);",
+    "syntax2":"console.log(map1); // [2, 8, 18, 32]",
+    "parameter":"callback(element, index, array), thisArg(optional - value to use as 'this' when executing callback)",
+    "return":"A new array with each element being the result of the callback function.",
+    "summary":"The map() method creates a new array with the results of calling a provided function on every element in the calling array."
+  },
+  {
+    "method":"Array.prototype.pop()",
+    "syntax":"var plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];",
+    "syntax1":"console.log(plants.pop());",
+    "syntax2":"// 'tomato'",
+    "parameter":"Does not takes any parameter.",
+    "return":"The removed element from the array; undefined if the array is empty.",
+    "summary":"The pop() method removes the last element from an array and returns that element. This method changes the length of the array."
+  },
+  {
+    "method":"Array.prototype.push()",
+    "syntax":"var plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];",
+    "syntax1":"console.log(plants.push('apple'));",
+    "syntax2":"// 4 - returns new length of array.",
+    "parameter":"The elements to add to the end of the array.",
+    "return":"The new length property of the object upon which the method was called.",
+    "summary":"The push() method adds one or more elements to the end of an array and returns the new length of the array."
+  },
+  {
+    "method":"Array.prototype.reduce()",
+    "syntax":"const array1 = [1, 2, 3, 4];;",
+    "syntax1":"const reducer = (acc, elm) => acc + elm;",
+    "syntax2":"console.log(array1.reduce(reducer)); // 10",
+    "parameter":"callback(accumulator, element, index, array), initial Value",
+    "return":"The single value that results from the reduction.",
+    "summary":"The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in a single output value."
+  },
+  {
+    "method":"Array.prototype.reverse()",
+    "syntax":"var array1 = ['one', 'two', 'three'];",
+    "syntax1":"var reversed = array1.reverse(); ",
+    "syntax2":"// ['three', 'two', 'one']",
+    "parameter":"Does not takes any parameter.",
+    "return":"A reversed array.",
+    "summary":"The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first."
+  },
+  {
+    "method":"Array.prototype.slice()",
+    "syntax":"var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];",
+    "syntax1":"console.log(animals.slice(2, 4));",
+    "syntax2":"['camel', 'duck']",
+    "parameter":"begin index, end index",
+    "return":"A new array containing the extracted elements.",
+    "summary":"The slice() method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included)."
+  },
+  {
+    "method":"Array.prototype.splice()",
+    "syntax":"var months = ['Jan', 'March', 'April', 'June'];",
+    "syntax1":"months.splice(1, 0, 'Feb');",
+    "syntax2":"console.log(months) // ['Jan', 'Feb', 'March', 'April', 'June']",
+    "parameter":"begin index, deleteCount (how many elements to delete from begin index)",
+    "return":"An array containing the deleted elements.",
+    "summary":"The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements."
+  }"}]
